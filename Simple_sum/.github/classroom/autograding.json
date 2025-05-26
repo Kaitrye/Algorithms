@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "unzip -q tests/tests.zip -d tests",
+      "run": "timeout 1 ./simplesum tests/input1.txt > output.txt  && numdiff -a 1.0e-14 -q output.txt tests/output1.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 2",
+      "setup": "",
+      "run": "timeout 1 ./simplesum tests/input2.txt > output.txt  && numdiff -a 1.0e-14 -q output.txt tests/output2.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 3",
+      "setup": "",
+      "run": "timeout 1 ./simplesum tests/input3.txt > output.txt  && numdiff -a 1.0e-14 -q output.txt tests/output3.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 4",
+      "setup": "",
+      "run": "timeout 1 ./simplesum tests/input4.txt > output.txt  && numdiff -a 1.0e-14 -q output.txt tests/output4.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 5",
+      "setup": "",
+      "run": "timeout 1 ./simplesum tests/input5.txt > output.txt  && numdiff -a 1.0e-14 -q output.txt tests/output5.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 6",
+      "setup": "",
+      "run": "timeout 1 ./simplesum tests/input6.txt > output.txt  && numdiff -a 1.0e-14 -q output.txt tests/output6.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 7",
+      "setup": "",
+      "run": "timeout 1 ./simplesum tests/input7.txt > output.txt  && numdiff -a 1.0e-14 -q output.txt tests/output7.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 8",
+      "setup": "",
+      "run": "timeout 2 ./simplesum tests/input8.txt > output.txt  && numdiff -a 1.0e-13 -q output.txt tests/output8.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 9",
+      "setup": "",
+      "run": "timeout 2 ./simplesum tests/input9.txt > output.txt  && numdiff -a 1.0e-13 -q output.txt tests/output9.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 10",
+      "setup": "",
+      "run": "timeout 2 ./simplesum tests/input10.txt > output.txt  && numdiff -a 1.0e-13 -q output.txt tests/output10.txt",
+      "input": "",
+      "output": "",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}

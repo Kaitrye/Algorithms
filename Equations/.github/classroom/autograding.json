@@ -1,0 +1,84 @@
+{
+  "tests": [
+    {
+      "name": "Test 1 (n=4)",
+      "setup": "",
+      "run": "ulimit -Sv 8000 && timeout 1 ./numofsolutions",
+      "input": "4 1000",
+      "output": "5",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 2 (n=1)",
+      "setup": "",
+      "run": "ulimit -Sv 8000 && timeout 1 ./numofsolutions",
+      "input": "1 1000",
+      "output": "1",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 3 (n=10)",
+      "setup": "",
+      "run": "ulimit -Sv 8000 && timeout 1 ./numofsolutions",
+      "input": "10 1000",
+      "output": "42",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 4 (n=20)",
+      "setup": "",
+      "run": "ulimit -Sv 8000 && timeout 1 ./numofsolutions || ( rc=$?;  if [ ${rc} -eq 124 ]; then echo \"Timeout\"; fi ; exit ${rc} ) ",
+      "input": "20 1000",
+      "output": "627",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 5 (n=49)",
+      "setup": "",
+      "run": "ulimit -Sv 8000 && timeout 1 ./numofsolutions || ( rc=$?;  if [ ${rc} -eq 124 ]; then echo \"Timeout\"; fi ; exit ${rc} ) ",
+      "input": "49 1000000",
+      "output": "173525",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 6 (n=100)",
+      "setup": "",
+      "run": "ulimit -Sv 8000 && timeout 1 ./numofsolutions || ( rc=$?;  if [ ${rc} -eq 124 ]; then echo \"Timeout\"; fi ; exit ${rc} ) ",
+      "input": "100 18446744073709551615",
+      "output": "190569292",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 7 (n=999)",
+      "setup": "",
+      "run": "ulimit -Sv 8000 && timeout 1 ./numofsolutions || ( rc=$?;  if [ ${rc} -eq 124 ]; then echo \"Timeout\"; fi ; exit ${rc} ) ",
+      "input": "999 18446744073709551615",
+      "output": "374314611502967994",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    },
+    {
+      "name": "Test 8 (n=10000)",
+      "setup": "",
+      "run": "ulimit -Sv 8000 && timeout 3 ./numofsolutions || ( rc=$?;  if [ ${rc} -eq 124 ]; then echo \"Timeout\"; fi ; exit ${rc} ) ",
+      "input": "10000 65537",
+      "output": "41629",
+      "comparison": "exact",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}

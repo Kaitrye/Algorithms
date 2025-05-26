@@ -1,0 +1,122 @@
+{
+  "tests": [
+    {
+      "name": "Test 1",
+      "setup": "unzip -q tests/tests.zip -d tests",
+      "run": "timeout 1 ./copypaste tests/text1.txt tests/commands1.txt output.txt && cmp output.txt tests/out1.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Test 2",
+      "setup": "",
+      "run": "timeout 1 ./copypaste tests/text2.txt tests/commands2.txt output.txt && cmp output.txt tests/out2.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Test 3",
+      "setup": "",
+      "run": "timeout 1 ./copypaste tests/text3.txt tests/commands3.txt output.txt && cmp output.txt tests/out3.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Test 4",
+      "setup": "",
+      "run": "timeout 1 ./copypaste tests/text4.txt tests/commands4.txt output.txt && cmp output.txt tests/out4.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Test 5",
+      "setup": "",
+      "run": "timeout 1 ./copypaste tests/text4.txt tests/commands5.txt output.txt && cmp output.txt tests/out5.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Test 6",
+      "setup": "",
+      "run": "timeout 1 ./copypaste tests/text4.txt tests/commands6.txt output.txt && cmp output.txt tests/out6.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Test 7",
+      "setup": "",
+      "run": "timeout 1 ./copypaste tests/text4.txt tests/commands7.txt output.txt && cmp output.txt tests/out7.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Test 8",
+      "setup": "",
+      "run": "timeout 1 ./copypaste tests/text4.txt tests/commands8.txt output.txt && cmp output.txt tests/out8.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Test 9",
+      "setup": "",
+      "run": "timeout 1 ./copypaste tests/text4.txt tests/commands9.txt output.txt && cmp output.txt tests/out9.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Big text. Test 1",
+      "setup": "",
+      "run": "timeout 1 ./copypaste tests/bible.txt tests/commands10.txt output.txt && cmp output.txt tests/out10.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Big text. Test 2",
+      "setup": "",
+      "run": "timeout 2 ./copypaste tests/bible.txt tests/commands11.txt output.txt && cmp output.txt tests/out11.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Big text. Test 3",
+      "setup": "",
+      "run": "timeout 2 ./copypaste tests/bible.txt tests/commands12.txt output.txt && cmp output.txt tests/out12.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    },{
+      "name": "Big text. Test 4",
+      "setup": "",
+      "run": "timeout 2 ./copypaste tests/alice29.txt tests/commands13.txt output.txt && cmp output.txt tests/out13.txt",
+      "input": "",
+      "output": "",
+      "comparison": "include",
+      "timeout": 1,
+      "points": 1
+    }
+  ]
+}
